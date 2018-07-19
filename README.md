@@ -6,8 +6,7 @@
 
 This tool does not hack or modify memory.
 
-Once you start the program, select the profile and click start. When you in game click the assigned hotkey to change recoil. 
-When you change recoils you will hear audio message notifying you the current recoil.
+This tool use audio messages to let you know which recoil you have equiped and or messages.
 
 
 ![App](https://imgur.com/QCAG50x.png)
