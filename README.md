@@ -1,15 +1,21 @@
 # PUBG-NO-RECOIL-MANAGER
 
-FOR LOGITECH MOUSE, USE AT UR OWN RISK
+## FOR LOGITECH MOUSE, USE AT UR OWN RISK
 
-THIS TOOL DOES NOT HACK PUBG, JUST UPDATE LOGITECH DRIVER PROFILE THATS ALL.
+###  THIS TOOL JUST UPDATE LOGITECH DRIVER PROFILE THATS ALL.
+
+This tool does not hack or modify memory.
+
+Once you start the program, select the profile and click start. When you in game click the assigned hotkey to change recoil. 
+When you change recoils you will hear audio message notifying you the current recoil.
+
 
 ![App](https://imgur.com/QCAG50x.png)
 
 
 # TUTORIAL
 
-If you have logitec mouse install thier gaming driver
+You have to install logitec gaming driver
 
 ![App](https://imgur.com/RWwlWnH.png)
 
