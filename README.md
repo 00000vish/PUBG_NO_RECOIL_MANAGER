@@ -4,7 +4,9 @@ FOR LOGITECH MOUSE
 
 USE AT UR OWN RISK
 
-![App](https://imgur.com/7aAr9wE.png)
+THIS TOOL DOES NOT HACK PUBG, JUST UPDATE LOGITECH DRIVER PROFILE THATS ALL.
+
+![App](https://imgur.com/QCAG50x.png)
 
 
 # TUTORIAL
@@ -21,7 +23,7 @@ after u add it go to properties of the profile and check lock profile while game
 
 open up PUBGNRM and click select 
 
-![App](https://imgur.com/7aAr9wE.png)
+![App](https://imgur.com/QCAG50x.png)
 
 and select a profile, if u get warning msg its not pubg profile go back select again. if u dont get a warning its the right one
 after that set ur in game sensivity and all that stuff accordingly and hotkeys and click start.
