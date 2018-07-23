@@ -4,7 +4,7 @@
 
 ###  THIS TOOL JUST UPDATE LOGITECH DRIVER PROFILE THATS ALL.
 
-This tool does not hack or modify memory.
+This tool does not hack or modify memory or games files.
 
 This tool use audio messages to let you know which recoil you have equiped and or messages.
 
