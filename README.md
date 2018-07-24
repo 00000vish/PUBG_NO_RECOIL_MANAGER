@@ -38,4 +38,4 @@ once u click start u should be able to switch guns with the hotkeys.
 
 # Download
 
-https://github.com/vishwenga/PUBG-NO-RECOIL-MANAGER/releases/
+https://github.com/vishwenga/PUBG_NO_RECOIL_MANAGER/releases
