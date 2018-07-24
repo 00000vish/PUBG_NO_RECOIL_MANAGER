@@ -38,210 +38,214 @@ namespace PUBG_NO_RECOIL_MANAGER.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("--------------------------------------------------------------------------\r\n-----" +
-            "-----------        Basic Variable       -----------------------------\r\n---------" +
-            "-------         Do not edit                 ---------------------\r\n-------------" +
-            "-------------------------------------------------------------\r\nlocal current_wea" +
-            "pon = \"none\"\r\n\r\n----------------------------------------------------------------" +
-            "----------\r\n----------------        Basic Setting       ------------------------" +
-            "------\r\n------------------------------------------------------------------------" +
-            "--\r\n\r\n---- key bind ----\r\n\r\nlocal ump9_key = 6\r\nlocal akm_key = 3\r\nlocal m16a4_k" +
-            "ey = nil\r\nlocal m416_key = 4\r\nlocal scarl_key = nil\r\nlocal uzi_key = nil\r\nlocal " +
-            "set_off_key = 5\r\n\r\n---- keyboard ---- Only Support logitech G Keyboard\r\n\r\nlocal " +
-            "ump9_gkey = 1  ---1 is use F1.\r\nlocal akm_gkey = nil\r\nlocal m16a4_gkey = nil\r\nlo" +
-            "cal m416_gkey = nil\r\nlocal scarl_gkey = nil\r\nlocal uzi_gkey = 2\r\nlocal set_off_g" +
-            "key = nil\r\n\r\n---- control_key ----\r\n\r\nlocal control_key = \"lctrl\" \r\n\r\n---- can u" +
-            "se \"lalt\", \"ralt\", \"alt\"  \"lshift\", \"rshift\", \"shift\"  \"lctrl\", \"rctrl\", \"ctrl\"\r" +
-            "\n\r\nlocal ignore_key = \"lalt\" --- ignore key\r\nlocal hold_breath_key = \"lshift\"\r\n\r" +
-            "\n--- fastloot setting---\r\n--- Press controlkey and and ignore_key and click Left" +
-            " mouse button ---\r\n--- \"lctrl\" + \"lalt\" + mousebutton\r\n\r\nlocal control_key = \"lc" +
-            "trl\" \r\nlocal fastloot = false ---if you don\'t need it, you can close it by true " +
-            "to false.\r\nlocal move = 40 ----1920*1080\r\n\r\n---- only can use \"numlock\", \"capslo" +
-            "ck\", \"scrolllock\"\r\n\r\nlocal full_mode_key = \"numlock\"   ---numlock lamp on,recoil" +
-            " is full_mode.\"numlock\" \r\nlocal mode_switch_key = \"capslock\" \r\nlocal lighton_key" +
-            " = \"scrolllock\"  ---start script,scrolllock lamp will be on.close script ,scroll" +
-            "lock lamp will be off.\r\n\r\n--- Your Sensitivity in Game \r\n\r\nlocal vertical_sensit" +
-            "ivity = 1.0 --- default is 0.7\r\nlocal target_sensitivity = 52 --- default is 50." +
-            "0\r\nlocal scope_sensitivity = 52 --- default is 50.0\r\nlocal scope4x_sensitivity =" +
-            " 52 --- default is 50.0\r\n\r\n-- you can close these by true to false\r\n\r\nlocal hold" +
-            "_breath_mode = true\r\nlocal full_mode = true\r\n\r\n---- Obfs setting\r\n-- local obfs_" +
-            "mode = false\r\nlocal obfs_mode = false\r\nlocal interval_ratio = 0.75\r\nlocal random" +
-            "_seed = 1\r\n\r\nlocal auto_reloading = false\r\n\r\n-- if auto_mode = true ,the guns ne" +
-            "ed to switch automatic shooting mode,except m16 single.\r\n\r\nlocal auto_mode = tru" +
-            "e\r\n--------------------------------------------------------------------------\r\n-" +
-            "---------------        Recoil Table        ------------------------------\r\n-----" +
-            "----------- You can fix the value here ------------------------------\r\n---------" +
-            "-----------------------------------------------------------------\r\n--- recoil ti" +
-            "mes\r\n--- if the Recoil compensation is Large or small，You can modify the value o" +
-            "f all_recoil_Times or recoil_table{times}\r\nlocal all_recoil_times = 1\r\n\r\nlocal r" +
-            "ecoil_table = {}\r\n\r\nrecoil_table[\"akm\"] = {\r\n    basic={56,41,42,46,48, 58,58.5," +
-            "62,64,67, 68,71,72,74.4,77, 72.5},\r\n    basictimes = 1.09,\r\n    full={56,41,42,4" +
-            "6,48, 58,58.5,64,68,68, 70,71,70,74.4,77, 74},\r\n    fulltimes = 1.04*0.75,\r\n    " +
-            "quadruple={56,41,42,46,48, 58,58.5,64,68,68, 70,71,70,74.4,77, 74},\r\n    quadrup" +
-            "letimes = 4*1.04,\r\n    fullof4x={56,41,42,46,48, 58,58.5,64,68,68, 70,71,70,74.4" +
-            ",77, 74},\r\n    fullof4xtimes = 4*1.04*0.75,\r\n    speed = 100,\r\n    maxbullets = " +
-            "40,\r\n    holdbreathtimes = 1.25,\r\n    fullholdbreathtimes = 1.25,\t\r\n}\r\n\r\nrecoil_" +
-            "table[\"m416\"] = {\r\n    basic={43,30,34,36,41, 40,46,47,45.6,46.5, 47.5,46.5,49.2" +
-            ",52.2,53.1, 54,54,54,54,55, 56,56,56,56,56, 57,57,57,57,57},\t\r\n    basictimes = " +
-            "1.115,\r\n    full={41,30,33,36,41, 40,46,47,45.6,46.5, 47.5,46.5,49.2,52.2,53.1, " +
-            "55,55,55,55,55, 56,56,56,56,56, 57,57,57,57,57},\r\n    fulltimes = 1.08*0.75,\t\r\n " +
-            "   quadruple={41,30,33,36,41, 40,46,47,45.6,46.5, 47.5,46.5,49.2,52.2,53.1, 55,5" +
-            "5,55,55,55, 56,56,56,56,56, 57,57,57,57,57},\r\n    quadrupletimes = 4*1.08*0.9,\r\n" +
-            "    fullof4x={41,30,33,36,41, 40,46,47,45.6,46.5, 47.5,46.5,49.2,52.2,53.1, 55,5" +
-            "5,55,55,55, 56,56,56,56,56, 57,57,57,57,57},\r\n    fullof4xtimes = 4*1.08*0.75,\r\n" +
-            "    speed = 89.98,\r\n    maxbullets = 40,\r\n    holdbreathtimes = 1.25,\r\n    fullh" +
-            "oldbreathtimes = 1.25,\t\r\n}\r\n\r\nrecoil_table[\"scarl\"] = {\r\n    basic={40,25,31.5,3" +
-            "9.6,39.6, 41.4,42.3,42.3,43.2,48.6, 50.4,52.2,54.5,53.2,55, 59},\r\n    basictimes" +
-            " = 1.19,\r\n    full={40,25,31.5,39.6,39.6, 41.4,42.3,42.3,43.2,48.6, 50.4,52.2,54" +
-            ",52.2,55, 57},\r\n    fulltimes = 1*0.75,\r\n    quadruple={40,25,31.5,39.6,39.6, 41" +
-            ".4,42.3,42.3,43.2,48.6, 50.4,52.2,54,52.2,55, 57},\r\n    quadrupletimes = 4*1,\r\n " +
-            "   fullof4x={40,25,31.5,39.6,39.6, 41.4,42.3,42.3,43.2,48.6, 50.4,52.2,54,52.2,5" +
-            "5, 57},\r\n    fullof4xtimes = 4*1*0.75,\r\n    speed = 96,\r\n    maxbullets = 40,\r\n " +
+            "-----------        Basic Setting       ------------------------------\r\n---------" +
+            "-----------------------------------------------------------------\r\n\r\n---- key bi" +
+            "nd ----\r\n\r\nlocal ump9_key = nil\r\nlocal akm_key = 5\r\nlocal m16a4_key = 7\r\nlocal m" +
+            "416_key = 8\r\nlocal scarl_key = nil\r\nlocal uzi_key = nil\r\nlocal qbz_key = 4\r\nloca" +
+            "l set_off_key = 6\r\n\r\n---- keyboard ---- Only Support logitech G Keyboard\r\n\r\nloca" +
+            "l ump9_gkey = 1  ---1 is use F1.\r\nlocal akm_gkey = nil\r\nlocal m16a4_gkey = nil\r\n" +
+            "local m416_gkey = nil\r\nlocal scarl_gkey = 3\r\nlocal uzi_gkey = 2\r\nlocal qbz_gkey " +
+            "= nil\r\nlocal set_off_gkey = nil\r\n\r\n---- control_key ----\r\n\r\nlocal control_key = " +
+            "\"lctrl\" \r\n\r\n---- can use \"lalt\", \"ralt\", \"alt\"  \"lshift\", \"rshift\", \"shift\"  \"lc" +
+            "trl\", \"rctrl\", \"ctrl\"\r\n\r\nlocal ignore_key = \"lalt\" --- ignore key\r\nlocal hold_br" +
+            "eath_key = \"lshift\"\r\n\r\n--- fastloot setting---\r\n--- Press controlkey and and ign" +
+            "ore_key and click Left mouse button ---\r\n--- \"lctrl\" + \"lalt\" + mousebutton\r\n\r\nl" +
+            "ocal control_key = \"lctrl\" \r\nlocal fastloot = true ---if you don\'t need it, you " +
+            "can close it by true to false.\r\nlocal move = 40 ----1920*1080\r\n\r\n---- only can u" +
+            "se \"numlock\", \"capslock\", \"scrolllock\"\r\n\r\nlocal full_mode_key = \"numlock\"   ---n" +
+            "umlock lamp on,recoil is full_mode.\"numlock\" \r\nlocal mode_switch_key = \"capslock" +
+            "\" \r\nlocal lighton_key = \"scrolllock\"  ---start script,scrolllock lamp will be on" +
+            ".close script ,scrolllock lamp will be off.\r\n\r\n--- Your Sensitivity in Game \r\n\r\n" +
+            "local vertical_sensitivity = 0.7 --- default is 0.7\r\nlocal target_sensitivity = " +
+            "50 --- default is 50.0\r\nlocal scope_sensitivity = 50 --- default is 50.0\r\nlocal " +
+            "scope4x_sensitivity = 50 --- default is 50.0\r\n\r\n-- you can close these by true t" +
+            "o false\r\n\r\nlocal hold_breath_mode = true\r\nlocal full_mode = true\r\n\r\n---- Obfs se" +
+            "tting\r\n-- local obfs_mode = false\r\nlocal obfs_mode = false\r\nlocal interval_ratio" +
+            " = 0.75\r\nlocal random_seed = 1\r\n\r\nlocal auto_reloading = false\r\n\r\n-- if auto_mod" +
+            "e = true ,the guns need to switch automatic shooting mode,except m16 single.\r\n\r\n" +
+            "local auto_mode = true\r\n--------------------------------------------------------" +
+            "------------------\r\n----------------        Recoil Table        ----------------" +
+            "--------------\r\n---------------- You can fix the value here --------------------" +
+            "----------\r\n--------------------------------------------------------------------" +
+            "------\r\n--- recoil times\r\n--- if the Recoil compensation is Large or small，You c" +
+            "an modify the value of all_recoil_Times or recoil_table{times}\r\nlocal all_recoil" +
+            "_times = 1\r\n\r\nlocal recoil_table = {}\r\n\r\nrecoil_table[\"akm\"] = {\r\n    basic={60." +
+            "3,40.2,47.5,51.0,54.5, 64.0,67.5,69.0,70.5,71.9, 71.5,73.6,79.3,79.3,81.6 ,70},\r" +
+            "\n    basictimes = 1,\r\n    full={61.3,41.2,47.5,51.0,54.5, 64.0,67.5,69.0,70.5,71" +
+            ".9, 71.5,73.6,79.3,79.3,81.6 ,80},\r\n    fulltimes = 1*0.75,\r\n    quadruple={61.3" +
+            ",41.2,47.5,51.0,54.5, 64.0,67.5,69.0,70.5,71.9, 71.5,73.6,79.3,79.3,81.6 ,80},\r\n" +
+            "    quadrupletimes = 4*1,\r\n    fullof4x={61.3,41.2,47.5,51.0,54.5, 64.0,67.5,69." +
+            "0,70.5,71.9, 71.5,73.6,79.3,79.3,81.6 ,80},\r\n    fullof4xtimes = 4*1*0.75,\r\n    " +
+            "speed = 100,\r\n    maxbullets = 40,\r\n    holdbreathtimes = 1.25,\r\n    fullholdbre" +
+            "athtimes = 1.25,\t\r\n}\r\n\r\nrecoil_table[\"m416\"] = {\r\n    basic={52.0,39.5,41.0,43.0" +
+            ",48.0, 50.0,53.2,54.2,54.5,52.5, 55.5,54.8,58.6,58.6,59.5, 70.3},\t\r\n    basictim" +
+            "es = 1,\r\n    full={52.0,39.5,41.0,43.0,48.0, 50.0,53.2,53.2,53.5,51.5, 51.5,54.8" +
+            ",58.6,58.6,59.5, 60.3},\r\n    fulltimes = 1*0.75,\t\r\n    quadruple={52.0,39.5,41.0" +
+            ",43.0,48.0, 50.0,53.2,53.2,53.5,51.5, 51.5,54.8,58.6,58.6,59.5, 60.3},\r\n    quad" +
+            "rupletimes = 4*1*0.9,\r\n    fullof4x={52.0,39.5,41.0,43.0,48.0, 50.0,53.2,53.2,53" +
+            ".5,51.5, 51.5,54.8,58.6,58.6,59.5, 60.3},\r\n    fullof4xtimes = 4*1*0.75,\r\n    sp" +
+            "eed = 90,\r\n    maxbullets = 40,\r\n    holdbreathtimes = 1.25,\r\n    fullholdbreath" +
+            "times = 1.25,\t\r\n}\r\n\r\nrecoil_table[\"scarl\"] = {\r\n    basic={56.0,26.0,32.0,40.0,4" +
+            "5.1, 48.9,51.0,54.2,59.8,60.4, 60.9,60.9,58.9,56.9,59.8, 60.5},\r\n    basictimes " +
+            "= 1,\r\n    full={56.0,26.0,32.0,40.0,45.1, 48.9,51.0,54.2,59.8,60.4, 60.9,60.9,58" +
+            ".9,56.9,59.8, 60.5},\r\n    fulltimes = 1*0.75,\r\n    quadruple={56.0,26.0,32.0,40." +
+            "0,45.1, 48.9,51.0,54.2,59.8,60.4, 60.9,60.9,58.9,56.9,59.8, 60.5},\r\n    quadrupl" +
+            "etimes = 4*1,\r\n    fullof4x={56.0,26.0,32.0,40.0,45.1, 48.9,51.0,54.2,59.8,60.4," +
+            " 60.9,60.9,58.9,56.9,59.8, 60.5},\r\n    fullof4xtimes = 4*1*0.75,\r\n    speed = 10" +
+            "0,\r\n    maxbullets = 40,\r\n    holdbreathtimes = 1.25,\r\n    fullholdbreathtimes =" +
+            " 1.25,\t\r\n}\r\n\r\nrecoil_table[\"qbz\"] = {\r\n    basic={52.0,25.0,28.7,38.2,42.4, 44.0" +
+            ",46.0,46.0,45.6,45.1, 48.0,51.3,52.0,54.0,56.0, 59},\r\n    basictimes = 1.05,\r\n  " +
+            "  full={51.2,24.5,28.7,38.2,42.4, 43.3,45.2,45.2,45.6,45.1, 48.0,50.3,51.0,53.0," +
+            "55.0},\r\n    fulltimes = 1*0.75,\r\n    quadruple={51.2,24.5,28.7,38.2,42.4, 43.3,4" +
+            "5.2,45.2,45.6,45.1, 48.0,50.3,51.0,53.0,55.0},\r\n    quadrupletimes = 4*1,\r\n    f" +
+            "ullof4x={51.2,24.5,28.7,38.2,42.4, 43.3,45.2,45.2,45.6,45.1, 48.0,50.3,51.0,53.0" +
+            ",55.0},\r\n    fullof4xtimes = 4*1*0.75,\r\n    speed = 90,\r\n    maxbullets = 40,\r\n " +
             "   holdbreathtimes = 1.25,\r\n    fullholdbreathtimes = 1.25,\t\r\n}\r\n\r\nrecoil_table[" +
-            "\"ump9\"] = {\r\n    basic={30,31,32,34,37, 35,35,36,42,38, 39,42,42,41,41, 41,41,42" +
-            ",42,42, 43,40,41,43,40, 40,40,41,42},\r\n    basictimes = 1,\r\n    full={30,31,32,3" +
-            "4,37, 35,35,36,42,38, 39,42,42,41,41, 41,41,42,44,42, 43,40,41,44,40, 40,41,42,4" +
-            "3},\r\n    fulltimes = 0.75*0.9,\r\n    quadruple={30,31,32,34,37, 35,35,36,42,38, 3" +
-            "9,42,42,41,41, 41,41,42,44,42, 43,40,41,44,40, 40,41,42,43},\r\n    quadrupletimes" +
-            " = 4*1*0.97,\r\n    fullof4x={30,31,32,34,37, 35,35,36,42,38, 39,42,42,41,41, 41,4" +
-            "1,42,44,42, 43,40,41,44,40, 40,41,42,43},\r\n    fullof4xtimes = 4*0.75,\r\n    spee" +
-            "d = 92,\r\n    maxbullets = 40,\r\n    holdbreathtimes = 1.25,\r\n    fullholdbreathti" +
-            "mes = 1.25,\t\r\n}\r\n\r\nrecoil_table[\"uzi\"] = { \r\n    basic={21.8,19.5,19.5,20.0,20.6" +
-            ", 24.8,25.7,27.2,30.9,33.3, 36.9,38.6,40.0,43.6,42.0,\r\n           47},\r\n    basi" +
-            "ctimes = 0.95,\r\n    full={4.8,4.8,5,5,5,6,6,6,6.2,6.8,6.8,7.6,7.6,7.9,8.2,8.2,8." +
-            "2,8.7,8.7,9,9.5,9.5,9.6,9.6},\r\n    fulltimes = 2,\r\n    quadruple={8.5,8.5,9,9,9," +
-            "10.5,10.5,10.5,12,13,13,14.5,15.5,16,17.5,18.5,19,19.5,19,19.5,19,19,19.5,20},\r\n" +
-            "    quadrupletimes = 2,\r\n    fullof4x={4.8,4.8,5,5,5,6,6,6,6.2,6.8,6.8,7.6,7.6,7" +
-            ".9,8.2,8.2,8.2,8.7,8.7,9,9.5,9.5,9.6,9.6},\r\n    fullof4xtimes = 2,\r\n    speed = " +
-            "48,\r\n    maxbullets = 35,\r\n    holdbreathtimes = 1.25,\r\n    fullholdbreathtimes " +
-            "= 1.25,\t\r\n}\r\n\r\nrecoil_table[\"m16a4\"] = {\r\n    basic={42.3,31.2,32.4,42.3,50.4, 5" +
-            "4.1,62.1,60,62.5,65.5, 63,62.1,64.4,64.4,65.25,63.9},\r\n    basictimes = 1.23,\r\n " +
-            "   full={42.3,31.2,32.4,42.3,50.4,54.1,62.1,60,62.5,65.5,63,62.1,64.4,64.4,65.25" +
-            ",63.9},\r\n    fulltimes = 1.23*0.77,\r\n    quadruple={42.3,31.2,32.4,42.3,50.4,54." +
-            "1,62.1,60,62.5,65.5,63,62.1,64.4,64.4,65.25,63.9},\r\n    quadrupletimes = 1.23*4," +
-            "\r\n    fullof4x={42.3,31.2,32.4,42.3,50.4,54.1,62.1,60,62.5,65.5,63,62.1,64.4,64." +
-            "4,65.25,63.9},\r\n    fullof4xtimes = 4*1.23*0.75,\r\n    speed = 80,\r\n    maxbullet" +
-            "s = 40,\r\n    clickspeed = 40,\r\n    holdbreathtimes = 1.25,\r\n    fullholdbreathti" +
-            "mes = 1.25,\t\r\n}\r\n\r\nrecoil_table[\"none\"] = {\r\n    basic={0,0,0,0,0,0,0,0,0,0,0,0," +
-            "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},\r\n    basictimes = 1,\r\n" +
-            "    full={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0," +
-            "0,0,0,0,0},\r\n    fulltimes = 1,\r\n    quadruple={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0," +
-            "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},\r\n    quadrupletimes = 1,\r\n    " +
-            "fullof4x={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0," +
-            "0,0,0,0,0},\r\n    fullof4xtimes = 1,\r\n    speed = 30,\r\n    maxbullets = 40,\r\n    " +
-            "clickspeed = 40,\r\n    holdbreathtimes = 1.25,\r\n    fullholdbreathtimes = 1.25,\t\r" +
-            "\n}\r\n\r\n--------------------------------------------------------------------------" +
-            "\r\n----------------          Function          ------------------------------\r\n--" +
-            "------------------------------------------------------------------------\r\n\r\n\r\nfu" +
-            "nction convert_sens(unconvertedSens) \r\n    return 0.002 * math.pow(10, unconvert" +
-            "edSens / 50)\r\nend\r\n\r\nfunction calc_sens_scale(sensitivity)\r\n    return convert_s" +
-            "ens(sensitivity)/convert_sens(50)\r\nend\r\n\r\nlocal target_scale = calc_sens_scale(t" +
-            "arget_sensitivity)\r\nlocal scope_scale = calc_sens_scale(scope_sensitivity)\r\nloca" +
-            "l scope4x_scale = calc_sens_scale(scope4x_sensitivity)\r\n\r\nfunction recoil_mode()" +
-            "\r\n    if not IsKeyLockOn(mode_switch_key) then\r\n        if IsKeyLockOn(full_mode" +
-            "_key) and full_mode then\r\n\t       return \"full\";\r\n\telse\r\n\t       return \"basic\";" +
-            "\r\n        end\r\n    end\t\r\n\t\r\n    if IsKeyLockOn(mode_switch_key) then\r\n        if" +
-            " IsKeyLockOn(full_mode_key) and full_mode then\r\n\t       return \"fullof4x\"\r\n\telse" +
-            "\r\n\t       return \"quadruple\"\r\n        end \r\n    end\t\t\r\nend\r\n\r\nfunction single_va" +
-            "lue(value)\r\n    return 10 * math.floor(( value / 10 ) + 0.9)\r\n    end\r\n\r\nfunctio" +
-            "n recoil_value(_weapon,_duration)\r\n    local _mode = recoil_mode()\r\n    local st" +
-            "ep = (math.floor(_duration/recoil_table[_weapon][\"speed\"])) + 1\r\n    if step > #" +
-            "recoil_table[_weapon][_mode] then\r\n        step = #recoil_table[_weapon][_mode]\r" +
-            "\n    end\r\n\r\n    local weapon_recoil = recoil_table[_weapon][_mode][step]\r\n    lo" +
-            "cal weapon_speed = recoil_table[_weapon][\"speed\"]\r\n    local weapon_clickspeed =" +
-            " recoil_table[_weapon][\"clickspeed\"]\r\n    local weapon_maxbullets = recoil_table" +
-            "[_weapon][\"maxbullets\"]\r\n    local weapon_basictimes = recoil_table[_weapon][\"ba" +
-            "sictimes\"]\r\n    local weapon_fulltimes = recoil_table[_weapon][\"fulltimes\"]\r\n   " +
-            " local weapon_quadrupletimes = recoil_table[_weapon][\"quadrupletimes\"]\r\n    loca" +
-            "l weapon_fullof4xtimes = recoil_table[_weapon][\"fullof4xtimes\"]\r\n    local weapo" +
-            "n_holdbreathtimes = recoil_table[_weapon][\"holdbreathtimes\"]\r\n    local weapon_f" +
-            "ullofholdbreathtimes = recoil_table[_weapon][\"fullholdbreathtimes\"]\r\n    local w" +
-            "eapon_intervals = weapon_speed    \r\n    local weapon_clicktime = weapon_clickspe" +
-            "ed\r\n    local weapon_bullets = weapon_maxbullets \r\n\r\n    if obfs_mode then\r\n    " +
-            "    local coefficient = interval_ratio * ( 1 + random_seed * math.random())\r\n   " +
-            "     weapon_intervals = math.floor(coefficient  * weapon_speed) \r\n    end\r\n    -" +
-            "- OutputLogMessage(\"weapon_intervals = %s\\n\", weapon_intervals)\r\n\r\n    recoil_re" +
-            "covery = weapon_recoil\r\n    recoil_times = all_recoil_times * 0.7 / vertical_sen" +
-            "sitivity \r\n\r\n    if recoil_mode() == \"basic\" and not IsModifierPressed(hold_brea" +
-            "th_key) then\r\n    recoil_recovery = recoil_recovery * recoil_times * weapon_basi" +
-            "ctimes\r\n    end\r\n    if recoil_mode() == \"basic\" and hold_breath_mode and IsModi" +
-            "fierPressed(hold_breath_key) then\r\n    recoil_recovery = recoil_recovery * weapo" +
-            "n_holdbreathtimes * recoil_times * weapon_basictimes\r\n    end\r\n\r\n    if recoil_m" +
-            "ode() == \"full\" and not IsModifierPressed(hold_breath_key) then\r\n    recoil_reco" +
-            "very = recoil_recovery * recoil_times * weapon_fulltimes\r\n    end\r\n    if recoil" +
-            "_mode() == \"full\" and hold_breath_mode and IsModifierPressed(hold_breath_key) th" +
-            "en\r\n    recoil_recovery = recoil_recovery * weapon_fullofholdbreathtimes * recoi" +
-            "l_times * weapon_fulltimes\r\n    end\r\n\r\n    if recoil_mode() == \"quadruple\" then\r" +
-            "\n    recoil_recovery = recoil_recovery * recoil_times * weapon_quadrupletimes\r\n " +
-            "   end\r\n\t\r\n    if recoil_mode() == \"fullof4x\" then\r\n    recoil_recovery = recoil" +
-            "_recovery * recoil_times * weapon_fullof4xtimes\r\n    end\r\n\r\n    -- issues/3\r\n   " +
-            " if IsMouseButtonPressed(2) then\r\n        recoil_recovery = recoil_recovery / ta" +
-            "rget_scale\r\n    elseif recoil_mode() == \"basic\" then\r\n        recoil_recovery = " +
-            "recoil_recovery / scope_scale \r\n    elseif recoil_mode() == \"full\" then\r\n       " +
-            " recoil_recovery = recoil_recovery / scope_scale\r\n    elseif recoil_mode() == \"q" +
-            "uadruple\" then\r\n        recoil_recovery = recoil_recovery / scope4x_scale\r\n    e" +
-            "lseif recoil_mode() == \"fullof4x\" then\r\n        recoil_recovery = recoil_recover" +
-            "y / scope4x_scale\r\n    end\r\n\r\n    return weapon_intervals,recoil_recovery,weapon" +
-            "_clicktime,weapon_bullets\r\nend\r\n\r\n----------------------------------------------" +
-            "----------------------------\r\n----------------          OnEvent          -------" +
-            "-----------------------\r\n-------------------------------------------------------" +
-            "-------------------\r\n\r\n\r\nfunction OnEvent(event, arg)\r\n    OutputLogMessage(\"eve" +
-            "nt = %s, arg = %d\\n\", event, arg)\r\n    if (event == \"PROFILE_ACTIVATED\") then\r\n " +
-            "       EnablePrimaryMouseButtonEvents(true)\r\n        Fire = false\r\n        curre" +
-            "nt_weapon = \"none\"\r\n        shoot_duration = 0.0\r\n        if IsKeyLockOn(lighton" +
-            "_key) then\r\n        PressAndReleaseKey(lighton_key)\r\n        elseif IsKeyLockOn(" +
-            "full_mode_key) then\r\n        PressAndReleaseKey(full_mode_key)\r\n        elseif I" +
-            "sKeyLockOn(mode_switch_key) then\r\n        PressAndReleaseKey(mode_switch_key)\r\n " +
-            "       end\r\n    elseif event == \"PROFILE_DEACTIVATED\" then\r\n        ReleaseMouse" +
-            "Button(1)\r\n    end\r\n\r\n    if (event == \"MOUSE_BUTTON_PRESSED\" and arg == set_off" +
-            "_key) \r\n    or (event == \"G_PRESSED\" and arg == set_off_gkey) then\r\n        curr" +
-            "ent_weapon = \"none\" \r\n    elseif (event == \"MOUSE_BUTTON_PRESSED\" and arg == akm" +
-            "_key)\r\n    or (event == \"G_PRESSED\" and arg == akm_gkey) then\r\n        current_w" +
-            "eapon = \"akm\" \r\n    elseif (event == \"MOUSE_BUTTON_PRESSED\" and arg == m16a4_key" +
-            ")\r\n    or (event == \"G_PRESSED\" and arg == m16a4_gkey) then\r\n        current_wea" +
-            "pon = \"m16a4\" \r\n    elseif (event == \"MOUSE_BUTTON_PRESSED\" and arg == m416_key)" +
-            "\r\n    or (event == \"G_PRESSED\" and arg == m416_gkey) then\r\n        current_weapo" +
-            "n = \"m416\" \r\n    elseif (event == \"MOUSE_BUTTON_PRESSED\" and arg == ump9_key)\r\n " +
-            "   or (event == \"G_PRESSED\" and arg == ump9_gkey) then\r\n        current_weapon =" +
-            " \"ump9\" \r\n    elseif (event == \"MOUSE_BUTTON_PRESSED\" and arg == uzi_key)\r\n    o" +
-            "r (event == \"G_PRESSED\" and arg == uzi_gkey) then\r\n        current_weapon = \"uzi" +
-            "\" \r\n    elseif (event == \"MOUSE_BUTTON_PRESSED\" and arg == scarl_key)\r\n    or (e" +
-            "vent == \"G_PRESSED\" and arg == scarl_gkey) then\r\n        current_weapon = \"scarl" +
-            "\" \r\n    elseif (event == \"M_RELEASED\" and arg == 3 and Fire) then\r\n        local" +
-            " intervals,recovery,clicktime,bullets = recoil_value(current_weapon,shoot_durati" +
-            "on)\r\n        if shoot_duration % (single_value(intervals) / 2) == 0 then\r\n      " +
-            "      PressAndReleaseMouseButton(1)\r\n        end \r\n        MoveMouseRelative(0, " +
-            "recovery / 10)\r\n        Sleep(single_value(intervals)/10)\r\n        shoot_duratio" +
-            "n = shoot_duration + (single_value(intervals)/10)\r\n        if auto_reloading the" +
-            "n\r\n            if shoot_duration > (single_value(intervals) * bullets) + 100 the" +
-            "n\r\n            ReleaseMouseButton(1)\r\n            PressAndReleaseKey(\"r\")\r\n     " +
-            "       Sleep(200)\r\n            Fire = false\r\n            end\r\n        end\r\n     " +
-            "   if not Fire then\r\n            ReleaseMouseButton(1)\r\n        elseif Fire then" +
-            "\r\n            SetMKeyState(3)\r\n        end\r\n\r\n    elseif (event == \"MOUSE_BUTTON" +
-            "_PRESSED\" and arg == 1) then\r\n        -- button 1 : Shoot\r\n        if ((current_" +
-            "weapon == \"none\") or IsModifierPressed(ignore_key)) then\r\n            PressMouse" +
-            "Button(1)\r\n            repeat\r\n                Sleep(30)\r\n            until not " +
-            "IsMouseButtonPressed(1)\r\n        elseif(current_weapon == \"m16a4\") then\r\n       " +
-            "     Fire = true\r\n            SetMKeyState(3)\r\n        else\r\n            if auto" +
-            "_mode then\r\n            repeat\r\n            local intervals,recovery,clicktime,b" +
-            "ullets = recoil_value(current_weapon,shoot_duration)\r\n            MoveMouseRelat" +
-            "ive(0, recovery /10 )\r\n            Sleep(intervals/10)\r\n            shoot_durati" +
-            "on = shoot_duration + (intervals/10)\r\n            if auto_reloading then\r\n      " +
-            "         if shoot_duration > (intervals * bullets) + 100 then\r\n               Re" +
-            "leaseMouseButton(1)\r\n               PressAndReleaseKey(\"r\")\r\n               Slee" +
-            "p(200)\r\n               end\r\n            end\r\n            until not IsMouseButton" +
-            "Pressed(1)\r\n            else\r\n            Fire = true\r\n            SetMKeyState(" +
-            "3)\r\n            end\r\n        end\r\n    elseif (event == \"MOUSE_BUTTON_RELEASED\" a" +
-            "nd arg == 1) then\r\n        Fire = false\r\n        shoot_duration = 0.0\r\n    end\r\n" +
-            "\r\n    while (event == \"MOUSE_BUTTON_PRESSED\" and arg == 1 and IsModifierPressed(" +
-            "control_key) and IsModifierPressed(ignore_key) and fastloot) do\r\n        Release" +
-            "MouseButton(1)\r\n        PressMouseButton(1)\r\n        for i = 0, 14 do\r\n        M" +
-            "oveMouseRelative(move, 0)\r\n        Sleep(2)\r\n        end\r\n        ReleaseMouseBu" +
-            "tton(1)\r\n        for i = 0, 14 do\r\n        MoveMouseRelative(-move, 0)\r\n        " +
-            "Sleep(2)\r\n        end\r\n        Sleep(10)          \r\n    end\r\n    if (current_wea" +
-            "pon == \"none\") then\r\n        if IsKeyLockOn(lighton_key) then\r\n        PressAndR" +
-            "eleaseKey(lighton_key)\r\n        end \r\n    else\r\n        if not IsKeyLockOn(light" +
-            "on_key) then\r\n        PressAndReleaseKey(lighton_key)\r\n        end\r\n    end\r\nend" +
-            "")]
+            "\"ump9\"] = {\r\n    basic={33.5,19.2,30.5,35.7,39.3, 39.0,38.7,40.2,41.8,44.0, 43.8" +
+            ",43.8,46.5,44.5,47.5},\r\n    basictimes = 1.05,\r\n    full={33.5,19.2,30.5,35.7,39" +
+            ".3, 39.0,38.7,40.2,41.8,44.0, 43.8,43.8,46.5,44.5,47.5},\r\n    fulltimes = 0.75*0" +
+            ".9,\r\n    quadruple={33.5,19.2,30.5,35.7,39.3, 39.0,38.7,40.2,41.8,44.0, 43.8,43." +
+            "8,46.5,44.5,47.5},\r\n    quadrupletimes = 4*1*0.97,\r\n    fullof4x={33.5,19.2,30.5" +
+            ",35.7,39.3, 39.0,38.7,40.2,41.8,44.0, 43.8,43.8,46.5,44.5,47.5},\r\n    fullof4xti" +
+            "mes = 4*0.75,\r\n    speed = 90,\r\n    maxbullets = 40,\r\n    holdbreathtimes = 1.25" +
+            ",\r\n    fullholdbreathtimes = 1.25,\t\r\n}\r\n\r\nrecoil_table[\"uzi\"] = { \r\n    basic={1" +
+            "6.0,16.0,16.0,17.6,18.6, 20.4,22.4,22.9,25.8,27.6, 32.6,36.9,38.0,38.8,39.8,40.5" +
+            "},\r\n    basictimes = 1.15,\r\n    full={16.0,16.0,16.0,17.6,18.6, 20.4,22.4,22.9,2" +
+            "5.8,27.6, 32.6,36.9,38.0,38.8,39.8,40.5},\r\n    fulltimes = 1.15*0.75*0.75,\r\n    " +
+            "quadruple={16.0,16.0,16.0,17.6,18.6, 20.4,22.4,22.9,25.8,27.6, 32.6,36.9,38.0,38" +
+            ".8,39.8,40.5},\r\n    quadrupletimes = 1.15,\r\n    fullof4x={16.0,16.0,16.0,17.6,18" +
+            ".6, 20.4,22.4,22.9,25.8,27.6, 32.6,36.9,38.0,38.8,39.8,40.5},\r\n    fullof4xtimes" +
+            " = 1.15*0.75*0.75,\r\n    speed = 48,\r\n    maxbullets = 35,\r\n    holdbreathtimes =" +
+            " 1.25,\r\n    fullholdbreathtimes = 1.25,\t\r\n}\r\n\r\nrecoil_table[\"m16a4\"] = {\r\n    ba" +
+            "sic={41.9,36.5,37.1,50.5,55.9, 62.9,66.9,69.5,69.5,70.0, 71.2,},\r\n    basictimes" +
+            " = 1.05,\r\n    full={41.9,36.5,37.1,50.5,55.9, 62.9,66.9,69.5,69.5,70.0, 71.2,},\r" +
+            "\n    fulltimes = 1*0.77,\r\n    quadruple={41.9,36.5,37.1,50.5,55.9, 62.9,66.9,69." +
+            "5,69.5,70.0, 71.2,},\r\n    quadrupletimes = 1*4,\r\n    fullof4x={41.9,36.5,37.1,50" +
+            ".5,55.9, 62.9,66.9,69.5,69.5,70.0, 71.2,},\r\n    fullof4xtimes = 4*1*0.75,\r\n    s" +
+            "peed = 75,\r\n    maxbullets = 40,\r\n    clickspeed = 40,\r\n    holdbreathtimes = 1." +
+            "25,\r\n    fullholdbreathtimes = 1.25,\t\r\n}\r\n\r\nrecoil_table[\"none\"] = {\r\n    basic=" +
+            "{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" +
+            "},\r\n    basictimes = 1,\r\n    full={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" +
+            ",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},\r\n    fulltimes = 1,\r\n    quadruple={0,0,0,0" +
+            ",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},\r\n    " +
+            "quadrupletimes = 1,\r\n    fullof4x={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" +
+            ",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},\r\n    fullof4xtimes = 1,\r\n    speed = 30,\r\n " +
+            "   maxbullets = 40,\r\n    clickspeed = 40,\r\n    holdbreathtimes = 1.25,\r\n    full" +
+            "holdbreathtimes = 1.25,\t\r\n}\r\n\r\n-------------------------------------------------" +
+            "-------------------------\r\n----------------          Function          ---------" +
+            "---------------------\r\n---------------------------------------------------------" +
+            "-----------------\r\n\r\n\r\nfunction convert_sens(unconvertedSens) \r\n    return 0.002" +
+            " * math.pow(10, unconvertedSens / 50)\r\nend\r\n\r\nfunction calc_sens_scale(sensitivi" +
+            "ty)\r\n    return convert_sens(sensitivity)/convert_sens(50)\r\nend\r\n\r\nlocal target_" +
+            "scale = calc_sens_scale(target_sensitivity)\r\nlocal scope_scale = calc_sens_scale" +
+            "(scope_sensitivity)\r\nlocal scope4x_scale = calc_sens_scale(scope4x_sensitivity)\r" +
+            "\n\r\nfunction recoil_mode()\r\n    if not IsKeyLockOn(mode_switch_key) then\r\n       " +
+            " if IsKeyLockOn(full_mode_key) and full_mode then\r\n\t       return \"full\";\r\n\telse" +
+            "\r\n\t       return \"basic\";\r\n        end\r\n    end\t\r\n\t\r\n    if IsKeyLockOn(mode_swi" +
+            "tch_key) then\r\n        if IsKeyLockOn(full_mode_key) and full_mode then\r\n\t      " +
+            " return \"fullof4x\"\r\n\telse\r\n\t       return \"quadruple\"\r\n        end \r\n    end\t\t\r\n" +
+            "end\r\n\r\nfunction single_value(value)\r\n    return 10 * math.floor(( value / 10 ) +" +
+            " 0.9)\r\n    end\r\n\r\nfunction recoil_value(_weapon,_duration)\r\n    local _mode = re" +
+            "coil_mode()\r\n    local step = (math.floor(_duration/recoil_table[_weapon][\"speed" +
+            "\"])) + 1\r\n    if step > #recoil_table[_weapon][_mode] then\r\n        step = #reco" +
+            "il_table[_weapon][_mode]\r\n    end\r\n\r\n    local weapon_recoil = recoil_table[_wea" +
+            "pon][_mode][step]\r\n    local weapon_speed = recoil_table[_weapon][\"speed\"]\r\n    " +
+            "local weapon_clickspeed = recoil_table[_weapon][\"clickspeed\"]\r\n    local weapon_" +
+            "maxbullets = recoil_table[_weapon][\"maxbullets\"]\r\n    local weapon_basictimes = " +
+            "recoil_table[_weapon][\"basictimes\"]\r\n    local weapon_fulltimes = recoil_table[_" +
+            "weapon][\"fulltimes\"]\r\n    local weapon_quadrupletimes = recoil_table[_weapon][\"q" +
+            "uadrupletimes\"]\r\n    local weapon_fullof4xtimes = recoil_table[_weapon][\"fullof4" +
+            "xtimes\"]\r\n    local weapon_holdbreathtimes = recoil_table[_weapon][\"holdbreathti" +
+            "mes\"]\r\n    local weapon_fullofholdbreathtimes = recoil_table[_weapon][\"fullholdb" +
+            "reathtimes\"]\r\n    local weapon_intervals = weapon_speed    \r\n    local weapon_cl" +
+            "icktime = weapon_clickspeed\r\n    local weapon_bullets = weapon_maxbullets \r\n\r\n  " +
+            "  if obfs_mode then\r\n        local coefficient = interval_ratio * ( 1 + random_s" +
+            "eed * math.random())\r\n        weapon_intervals = math.floor(coefficient  * weapo" +
+            "n_speed) \r\n    end\r\n    -- OutputLogMessage(\"weapon_intervals = %s\\n\", weapon_in" +
+            "tervals)\r\n\r\n    recoil_recovery = weapon_recoil\r\n    recoil_times = all_recoil_t" +
+            "imes * 0.7 / vertical_sensitivity \r\n\r\n    if recoil_mode() == \"basic\" and not Is" +
+            "ModifierPressed(hold_breath_key) then\r\n    recoil_recovery = recoil_recovery * r" +
+            "ecoil_times * weapon_basictimes\r\n    end\r\n    if recoil_mode() == \"basic\" and ho" +
+            "ld_breath_mode and IsModifierPressed(hold_breath_key) then\r\n    recoil_recovery " +
+            "= recoil_recovery * weapon_holdbreathtimes * recoil_times * weapon_basictimes\r\n " +
+            "   end\r\n\r\n    if recoil_mode() == \"full\" and not IsModifierPressed(hold_breath_k" +
+            "ey) then\r\n    recoil_recovery = recoil_recovery * recoil_times * weapon_fulltime" +
+            "s\r\n    end\r\n    if recoil_mode() == \"full\" and hold_breath_mode and IsModifierPr" +
+            "essed(hold_breath_key) then\r\n    recoil_recovery = recoil_recovery * weapon_full" +
+            "ofholdbreathtimes * recoil_times * weapon_fulltimes\r\n    end\r\n\r\n    if recoil_mo" +
+            "de() == \"quadruple\" then\r\n    recoil_recovery = recoil_recovery * recoil_times *" +
+            " weapon_quadrupletimes\r\n    end\r\n\t\r\n    if recoil_mode() == \"fullof4x\" then\r\n   " +
+            " recoil_recovery = recoil_recovery * recoil_times * weapon_fullof4xtimes\r\n    en" +
+            "d\r\n\r\n    -- issues/3\r\n    if IsMouseButtonPressed(2) then\r\n        recoil_recove" +
+            "ry = recoil_recovery / target_scale\r\n    elseif recoil_mode() == \"basic\" then\r\n " +
+            "       recoil_recovery = recoil_recovery / scope_scale \r\n    elseif recoil_mode(" +
+            ") == \"full\" then\r\n        recoil_recovery = recoil_recovery / scope_scale\r\n    e" +
+            "lseif recoil_mode() == \"quadruple\" then\r\n        recoil_recovery = recoil_recove" +
+            "ry / scope4x_scale\r\n    elseif recoil_mode() == \"fullof4x\" then\r\n        recoil_" +
+            "recovery = recoil_recovery / scope4x_scale\r\n    end\r\n\r\n    return weapon_interva" +
+            "ls,recoil_recovery,weapon_clicktime,weapon_bullets\r\nend\r\n\r\n---------------------" +
+            "-----------------------------------------------------\r\n----------------         " +
+            " OnEvent          ------------------------------\r\n------------------------------" +
+            "--------------------------------------------\r\n\r\n\r\nfunction OnEvent(event, arg)\r\n" +
+            "    OutputLogMessage(\"event = %s, arg = %d\\n\", event, arg)\r\n    if (event == \"PR" +
+            "OFILE_ACTIVATED\") then\r\n        EnablePrimaryMouseButtonEvents(true)\r\n        Fi" +
+            "re = false\r\n        current_weapon = \"none\"\r\n        shoot_duration = 0.0\r\n     " +
+            "   if IsKeyLockOn(lighton_key) then\r\n        PressAndReleaseKey(lighton_key)\r\n  " +
+            "      elseif IsKeyLockOn(full_mode_key) then\r\n        PressAndReleaseKey(full_mo" +
+            "de_key)\r\n        elseif IsKeyLockOn(mode_switch_key) then\r\n        PressAndRelea" +
+            "seKey(mode_switch_key)\r\n        end\r\n    elseif event == \"PROFILE_DEACTIVATED\" t" +
+            "hen\r\n        ReleaseMouseButton(1)\r\n    end\r\n\r\n    if (event == \"MOUSE_BUTTON_PR" +
+            "ESSED\" and arg == set_off_key) \r\n    or (event == \"G_PRESSED\" and arg == set_off" +
+            "_gkey) then\r\n        current_weapon = \"none\" \r\n    elseif (event == \"MOUSE_BUTTO" +
+            "N_PRESSED\" and arg == akm_key)\r\n    or (event == \"G_PRESSED\" and arg == akm_gkey" +
+            ") then\r\n        current_weapon = \"akm\" \r\n    elseif (event == \"MOUSE_BUTTON_PRES" +
+            "SED\" and arg == m16a4_key)\r\n    or (event == \"G_PRESSED\" and arg == m16a4_gkey) " +
+            "then\r\n        current_weapon = \"m16a4\" \r\n    elseif (event == \"MOUSE_BUTTON_PRES" +
+            "SED\" and arg == m416_key)\r\n    or (event == \"G_PRESSED\" and arg == m416_gkey) th" +
+            "en\r\n        current_weapon = \"m416\" \r\n    elseif (event == \"MOUSE_BUTTON_PRESSED" +
+            "\" and arg == ump9_key)\r\n    or (event == \"G_PRESSED\" and arg == ump9_gkey) then\r" +
+            "\n        current_weapon = \"ump9\" \r\n    elseif (event == \"MOUSE_BUTTON_PRESSED\" a" +
+            "nd arg == uzi_key)\r\n    or (event == \"G_PRESSED\" and arg == uzi_gkey) then\r\n    " +
+            "    current_weapon = \"uzi\" \r\n    elseif (event == \"MOUSE_BUTTON_PRESSED\" and arg" +
+            " == scarl_key)\r\n    or (event == \"G_PRESSED\" and arg == scarl_gkey) then\r\n      " +
+            "  current_weapon = \"scarl\" \r\n    elseif (event == \"MOUSE_BUTTON_PRESSED\" and arg" +
+            " == qbz_key)\r\n    or (event == \"G_PRESSED\" and arg == qbz_gkey) then\r\n        cu" +
+            "rrent_weapon = \"qbz\" \r\n\t\t\r\n    elseif (event == \"M_RELEASED\" and arg == 3 and Fi" +
+            "re) then\r\n        local intervals,recovery,clicktime,bullets = recoil_value(curr" +
+            "ent_weapon,shoot_duration)\r\n        if shoot_duration % (single_value(intervals)" +
+            " / 2) == 0 then\r\n            PressAndReleaseMouseButton(1)\r\n        end \r\n      " +
+            "  MoveMouseRelative(0, recovery / 10)\r\n        Sleep(single_value(intervals)/10)" +
+            "\r\n        shoot_duration = shoot_duration + (single_value(intervals)/10)\r\n      " +
+            "  if auto_reloading then\r\n            if shoot_duration > (single_value(interval" +
+            "s) * bullets) + 100 then\r\n            ReleaseMouseButton(1)\r\n            PressAn" +
+            "dReleaseKey(\"r\")\r\n            Sleep(200)\r\n            Fire = false\r\n            " +
+            "end\r\n        end\r\n        if not Fire then\r\n            ReleaseMouseButton(1)\r\n " +
+            "       elseif Fire then\r\n            SetMKeyState(3)\r\n        end\r\n\r\n    elseif " +
+            "(event == \"MOUSE_BUTTON_PRESSED\" and arg == 1) then\r\n        -- button 1 : Shoot" +
+            "\r\n        if ((current_weapon == \"none\") or IsModifierPressed(ignore_key)) then\r" +
+            "\n            PressMouseButton(1)\r\n            repeat\r\n                Sleep(30)\r" +
+            "\n            until not IsMouseButtonPressed(1)\r\n        elseif(current_weapon ==" +
+            " \"m16a4\") then\r\n            Fire = true\r\n            SetMKeyState(3)\r\n        el" +
+            "se\r\n            if auto_mode then\r\n            repeat\r\n            local interva" +
+            "ls,recovery,clicktime,bullets = recoil_value(current_weapon,shoot_duration)\r\n   " +
+            "         MoveMouseRelative(0, recovery /10 )\r\n            Sleep(intervals/10)\r\n " +
+            "           shoot_duration = shoot_duration + (intervals/10)\r\n            if auto" +
+            "_reloading then\r\n               if shoot_duration > (intervals * bullets) + 100 " +
+            "then\r\n               ReleaseMouseButton(1)\r\n               PressAndReleaseKey(\"r" +
+            "\")\r\n               Sleep(200)\r\n               end\r\n            end\r\n            " +
+            "until not IsMouseButtonPressed(1)\r\n            else\r\n            Fire = true\r\n  " +
+            "          SetMKeyState(3)\r\n            end\r\n        end\r\n    elseif (event == \"M" +
+            "OUSE_BUTTON_RELEASED\" and arg == 1) then\r\n        Fire = false\r\n        shoot_du" +
+            "ration = 0.0\r\n    end\r\n\r\n    while (event == \"MOUSE_BUTTON_PRESSED\" and arg == 1" +
+            " and IsModifierPressed(control_key) and IsModifierPressed(ignore_key) and fastlo" +
+            "ot) do\r\n        ReleaseMouseButton(1)\r\n        PressMouseButton(1)\r\n        for " +
+            "i = 0, 14 do\r\n        MoveMouseRelative(move, 0)\r\n        Sleep(2)\r\n        end\r" +
+            "\n        ReleaseMouseButton(1)\r\n        for i = 0, 14 do\r\n        MoveMouseRelat" +
+            "ive(-move, 0)\r\n        Sleep(2)\r\n        end\r\n        Sleep(10)          \r\n    e" +
+            "nd\r\n    if (current_weapon == \"none\") then\r\n        if IsKeyLockOn(lighton_key) " +
+            "then\r\n        PressAndReleaseKey(lighton_key)\r\n        end \r\n    else\r\n        i" +
+            "f not IsKeyLockOn(lighton_key) then\r\n        PressAndReleaseKey(lighton_key)\r\n  " +
+            "      end\r\n    end\r\nend")]
         public string pubgScript {
             get {
                 return ((string)(this["pubgScript"]));
