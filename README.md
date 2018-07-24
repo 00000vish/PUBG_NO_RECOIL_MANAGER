@@ -6,6 +6,9 @@
 
 This tool does not hack or modify memory or games files.
 
+
+Script downloaded from  : https://github.com/minglich/logitech-pubg/blob/master/weaponspeed_mode.lua
+
 This tool use audio messages to let you know which recoil you have equiped and or messages.
 
 
