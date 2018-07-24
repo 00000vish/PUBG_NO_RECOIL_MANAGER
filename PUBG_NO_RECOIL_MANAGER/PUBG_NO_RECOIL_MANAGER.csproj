@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
+    <None Include="Resources\qbz.wav" />
     <None Include="Resources\m16a4.wav" />
     <None Include="Resources\m416.wav" />
     <None Include="Resources\akm.wav" />

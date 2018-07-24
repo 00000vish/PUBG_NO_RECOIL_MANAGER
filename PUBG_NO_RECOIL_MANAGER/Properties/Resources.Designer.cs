@@ -90,6 +90,15 @@ namespace PUBG_NO_RECOIL_MANAGER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream qbz {
+            get {
+                return ResourceManager.GetStream("qbz", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream scarl {
             get {
                 return ResourceManager.GetStream("scarl", resourceCulture);

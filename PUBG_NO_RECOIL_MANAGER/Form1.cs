@@ -113,6 +113,9 @@ namespace PUBG_NO_RECOIL_MANAGER
                 case "uzi":
                     checkBox3.Checked = false;
                     break;
+                case "qbz":
+                    checkBox9.Checked = false;
+                    break;
             }
             switchGunRecoilAsync(null);
         }
@@ -128,6 +131,8 @@ namespace PUBG_NO_RECOIL_MANAGER
                 case "m16a4": return 3;
                 case "scarl": return 4;
                 case "uzi": return 5;
+                case "qbz": return 6;
+
             }
             return 0;
         }
@@ -153,7 +158,7 @@ namespace PUBG_NO_RECOIL_MANAGER
                     {
                         currentGun = "akm";
                         textBox7.Text = "akm";
-                        NoReciolScript.selectGun(false, true, false, false, false, false, "akm");
+                        NoReciolScript.selectGun(false, true, false, false, false, false, false, "akm");
                         audioStream = new SoundPlayer(Properties.Resources.akm);
                     }
                     else
@@ -167,7 +172,7 @@ namespace PUBG_NO_RECOIL_MANAGER
                     {
                         currentGun = "ump9";
                         textBox7.Text = "ump9";
-                        NoReciolScript.selectGun(true, false, false, false, false, false, "ump9");
+                        NoReciolScript.selectGun(true, false, false, false, false, false, false, "ump9");
                         audioStream = new SoundPlayer(Properties.Resources.ump9);
                     }
                     else
@@ -181,7 +186,7 @@ namespace PUBG_NO_RECOIL_MANAGER
                     {
                         currentGun = "m416";
                         textBox7.Text = "m416";
-                        NoReciolScript.selectGun(false, false, false, true, false, false, "m416");
+                        NoReciolScript.selectGun(false, false, false, true, false, false, false, "m416");
                         audioStream = new SoundPlayer(Properties.Resources.m416);
                     }
                     else
@@ -196,7 +201,7 @@ namespace PUBG_NO_RECOIL_MANAGER
                     {
                         currentGun = "m16a4";
                         textBox7.Text = "m16a4";
-                        NoReciolScript.selectGun(false, false, true, false, false, false, "m16a4");
+                        NoReciolScript.selectGun(false, false, true, false, false, false, false, "m16a4");
                         audioStream = new SoundPlayer(Properties.Resources.m16a4);
                     }
                     else
@@ -211,7 +216,7 @@ namespace PUBG_NO_RECOIL_MANAGER
                     {
                         currentGun = "scarl";
                         textBox7.Text = "scarl";
-                        NoReciolScript.selectGun(false, false, false, false, true, false, "scarl");
+                        NoReciolScript.selectGun(false, false, false, false, true, false, false, "scarl");
                         audioStream = new SoundPlayer(Properties.Resources.scarl);
                     }
                     else
@@ -226,7 +231,7 @@ namespace PUBG_NO_RECOIL_MANAGER
                     {
                         currentGun = "uzi";
                         textBox7.Text = "uzi";
-                        NoReciolScript.selectGun(false, false, false, false, false, true, "uzi");
+                        NoReciolScript.selectGun(false, false, false, false, false, true, false, "uzi");
                         audioStream = new SoundPlayer(Properties.Resources.uzi);
                     }
                     else
@@ -237,6 +242,21 @@ namespace PUBG_NO_RECOIL_MANAGER
 
                     break;
                 case 6:
+                    if (checkBox9.Checked)
+                    {
+                        currentGun = "qbz";
+                        textBox7.Text = "qbz";
+                        NoReciolScript.selectGun(false, false, false, false, false,  false, true, "qbz");
+                        audioStream = new SoundPlayer(Properties.Resources.qbz);
+                    }
+                    else
+                    {
+                        weaponIndex++;
+                        goto GUNSWITCH;
+                    }
+
+                    break;
+                case 7:
                     weaponIndex = 0;
                     atleastOneGunOn();
                     goto GUNSWITCH;
@@ -302,6 +322,7 @@ namespace PUBG_NO_RECOIL_MANAGER
                 checkBox6.Checked = true;
                 checkBox7.Checked = true;
                 checkBox8.Checked = true;
+                checkBox9.Checked = true;
             }
         }
 

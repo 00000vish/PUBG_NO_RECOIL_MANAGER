@@ -35,9 +35,10 @@ namespace PUBG_NO_RECOIL_MANAGER
         static bool m416_key = false;
         static bool scarl_key = false;
         static bool uzi_key = false;
+        static bool qbz_key = false;
 
         //select gun
-        public static void selectGun(bool ump, bool akm, bool m, bool mfour, bool scarl, bool uzi, string gun)
+        public static void selectGun(bool ump, bool akm, bool m, bool mfour, bool scarl, bool uzi,bool qbz, string gun)
         {
             gun_key = gun;
             ump9_key = ump;
@@ -46,6 +47,7 @@ namespace PUBG_NO_RECOIL_MANAGER
             m416_key = mfour;
             scarl_key = scarl;
             uzi_key = uzi;
+            qbz_key = qbz;
         }
 
         //checks for update from github project
@@ -260,6 +262,18 @@ namespace PUBG_NO_RECOIL_MANAGER
                     else
                     {
                         scriptArray[i] = "local uzi_key = nil";
+                    }
+                }
+                //qbz_key 
+                if (scriptArray[i].Contains("local qbz_key ="))
+                {
+                    if (qbz_key)
+                    {
+                        scriptArray[i] = "local qbz_key = " + Properties.Settings.Default.mouseActivate;
+                    }
+                    else
+                    {
+                        scriptArray[i] = "local qbz_key = nil";
                     }
                 }
 
