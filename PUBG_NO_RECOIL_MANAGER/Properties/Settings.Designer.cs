@@ -374,5 +374,17 @@ namespace PUBG_NO_RECOIL_MANAGER.Properties {
                 this["gunDisableKey"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool autoUpdate {
+            get {
+                return ((bool)(this["autoUpdate"]));
+            }
+            set {
+                this["autoUpdate"] = value;
+            }
+        }
     }
 }

@@ -477,5 +477,8 @@ end</Value>
     <Setting Name="gunDisableKey" Type="System.String" Scope="User">
       <Value Profile="(Default)">F3</Value>
     </Setting>
+    <Setting Name="autoUpdate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

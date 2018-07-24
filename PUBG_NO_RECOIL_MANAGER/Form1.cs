@@ -70,8 +70,10 @@ namespace PUBG_NO_RECOIL_MANAGER
             comboBox1.Text = Properties.Settings.Default.gunSwitchKey;
             comboBox2.Text = Properties.Settings.Default.gunDisableKey;
             guiComplete = true;
-
-            NoReciolScript.checkForUpdate();
+            if (Properties.Settings.Default.autoUpdate)
+            {
+                NoReciolScript.checkForUpdate();
+            }            
         }
 
 

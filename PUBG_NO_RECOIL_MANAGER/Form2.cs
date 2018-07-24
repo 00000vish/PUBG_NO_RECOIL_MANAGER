@@ -20,11 +20,13 @@ namespace PUBG_NO_RECOIL_MANAGER
         private void Form2_Load(object sender, EventArgs e)
         {
             richTextBox1.Text = Properties.Settings.Default.pubgScript;
+            checkBox1.Checked = Properties.Settings.Default.autoUpdate;
             
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Properties.Settings.Default.autoUpdate = (bool)checkBox1.Checked;
             Properties.Settings.Default.pubgScript = richTextBox1.Text;
             Properties.Settings.Default.Save();
         }
